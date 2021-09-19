@@ -1,0 +1,13 @@
+settings:
+  folder-dir: ~/.config/nvim/ftplugin
+  script-path: ~/.config/nvim/vim/autofmtgen.vim
+
+plugins:
+  python:
+    - cmd: yapf
+      arg:
+  haskell:
+    - cmd: brittany
+      arg: --columns 80 --indent 2
+    - cmd: hindent
+      arg: --indent-size 2 --line-length 80
